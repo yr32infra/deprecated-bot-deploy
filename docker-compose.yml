@@ -1,7 +1,7 @@
 version: '3.9'
 services:
   deprecatedbot:
-    image: ghcr.io/yanorei32/deprecated-bot:0.1.3@sha256:1c4af8a9c1245a44c5b4d39f5b0ceb0bc526f23ff208f5b23c525eaa263d41a5
+    image: ghcr.io/yanorei32/deprecated-bot:0.1.3
     hostname: deprecatedbot
     container_name: deprecatedbot__deprecatedbot
 
