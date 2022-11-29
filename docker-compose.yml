@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+  deprecatedbot:
+    image: ghcr.io/yanorei32/deprecated-bot:0.1.1@sha256:d94a0859f311fb6110a15c42a4eca20983b0f377a5825b87f509d8a3b1aa8d36
+
+    hostname: deprecatedbot
+    container_name: deprecatedbot__deprecatedbot
+
+    restart: unless-stopped
+
+    environment:
+      TARGET: ${TARGET}
+      TRIGGER: ${TRIGGER}
+      TOKEN: ${TOKEN}
+
+    deploy:
+      resources:
+        limits:
+          memory: 128m
