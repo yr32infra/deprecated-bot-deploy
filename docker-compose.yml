@@ -17,3 +17,10 @@ services:
       resources:
         limits:
           memory: 128m
+
+    networks:
+      - default
+
+networks:
+  default:
+    name: deprecatedbot__default
